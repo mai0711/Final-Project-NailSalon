@@ -1,0 +1,296 @@
+html {
+  font-size: 0.625rem;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  letter-spacing: 1em;
+  color: black;
+}
+
+header {
+  background-color: #dcdcdc;
+  padding: 20px 20px;
+  letter-spacing: 0em;
+}
+@media screen and (max-width: 480px) {
+  header {
+    font-size: 40%;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  margin-top: 100px;
+}
+
+.wrapper {
+  padding: 0 10vw;
+  overflow: hidden;
+}
+
+h1, .logo {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  header {
+    position: static;
+    display: flex;
+  }
+}
+header nav ul {
+  display: flex;
+  gap: 2rem;
+}
+@media screen and (max-width: 480px) {
+  header nav ul {
+    flex-wrap: wrap;
+  }
+}
+header nav ul li {
+  text-transform: uppercase;
+  font-size: 100%;
+}
+
+.fv-msg h1 {
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+@media screen and (max-width: 480px) {
+  .fv-msg h1 {
+    letter-spacing: 0em;
+    font-size: 90%;
+  }
+}
+.fv-msg p {
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .fv-msg p {
+    font-size: 40%;
+  }
+}
+
+.fv {
+  background-image: url(../image/nav.jpg);
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  width: 100%;
+  height: 0;
+}
+
+.fv-msg {
+  margin-top: 10%;
+}
+
+.concept {
+  padding-top: 100px;
+}
+.concept .contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.concept .contents p {
+  display: flex;
+  width: 80%;
+  max-width: 550px;
+  padding-right: 150px;
+}
+@media screen and (max-width: 480px) {
+  .concept .contents p {
+    font-size: 40%;
+  }
+}
+
+.menu {
+  background-image: url(../image/menu.jpg);
+  min-height: 50vh;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0px;
+}
+.menu h1 {
+  display: inline-block;
+  margin: 0px 0px 50px 20px;
+  font-size: 5rem;
+}
+.menu p {
+  width: 80%;
+  max-width: 600px;
+  letter-spacing: 0rem;
+  text-shadow: 0 0 3px wheat, 0 0 3px pink;
+}
+.menu .list-menu {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.menu .list-menu .grid-left {
+  padding-left: 150px;
+}
+.menu .list-menu .grid-right {
+  padding-left: 150px;
+}
+.menu .list-menu h1, .menu .list-menu p {
+  font-size: 30px;
+  font-weight: bold;
+}
+.menu .list-menu figure {
+  padding-top: 30px;
+}
+.menu .list-menu li {
+  display: flex;
+  gap: 1rem;
+  width: 80%;
+  max-width: 550px;
+}
+.menu .list-menu li:not(:first-child) {
+  margin-top: 4rem;
+}
+.menu .list-menu li:nth-child(3), .menu .list-menu li:nth-child(6) {
+  padding-bottom: 50px;
+}
+
+.concept .contents > figure {
+  width: 50%;
+  max-width: 320px;
+  box-shadow: 30px 30px #dcdcdc;
+}
+.concept .contents > figure img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.collections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collections .location {
+  width: 60%;
+  max-width: 520px;
+  height: 500px;
+  background-color: #dcdcdc;
+  padding: 6rem;
+  margin-top: 100px;
+}
+.collections .location h1 {
+  font-size: 30px;
+}
+.collections .location p {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 15px;
+}
+.collections figure {
+  width: 50%;
+  max-width: 450px;
+  margin-left: -3rem;
+}
+.collections figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  background-color: white;
+  display: inline-block;
+  padding: 5px 80px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+.btn span {
+  display: inline-block;
+  transform: scale(1);
+  letter-spacing: 0.5em;
+}
+.btn:hover {
+  background-color: black;
+}
+.btn:hover span {
+  color: white;
+}
+
+.design {
+  padding-top: 100px;
+}
+.design h1 {
+  text-align: center;
+}
+
+.list-pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.list-pictures img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: #f0f8ff;
+  letter-spacing: 0em;
+}
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer nav ul {
+  display: flex;
+  gap: 2rem;
+}
+footer nav ul li {
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+.footer-nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer-nav .logo {
+  margin: 50px 50px;
+}
+
+small {
+  display: block;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+/*# sourceMappingURL=style.css.map */
