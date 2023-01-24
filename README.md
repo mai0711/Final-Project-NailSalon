@@ -1,13 +1,13 @@
 # NailSalon
 
-#Technology / Libraries
+# Technology / Libraries
 HTML
 
 CSS
 
 SASS
 
-#References
+# References
 fontawesome
 https://fontawesome.com/
 
